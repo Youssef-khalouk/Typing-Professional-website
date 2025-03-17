@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Professional - Learn to Type Faster</title>
+    <link rel="icon" href="Images/TypingPro-150.png" type="image/png">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+
+    <script type="text/javascript">
+        // Initialize EmailJS
+        (function() {
+            emailjs.init("MDau2j_FXMQtfgVgD");  // Replace with your user ID from EmailJS
+        })();
+
+        function sendEmail(event) {
+            event.preventDefault();  // Prevent default form submission
+            
+            // Get form data
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const message = document.getElementById("message").value;
+
+            // Send email using EmailJS
+            const params = {
+                name: name,
+                email: email,
+                message: message
+            };
+
+            emailjs.send("service_376x694", "template_s5ifpvn", params)
+                .then((response) => {
+                    alert("Your message has been sent!");
+                    document.getElementById("contact-form").reset();  // Reset the form
+                })
+                .catch((error) => {
+                    alert("Error: " + JSON.stringify(error));
+                });
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="Images/TypingPro-150.png" alt="Typing Professional Icon" width="50" height="50">
+                <h1>Typing Professional</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#screenshots">Screenshots</a></li>
+                    <li><a href="#support">Support</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="https://apps.microsoft.com/detail/9PJ3WLW98BFS" class="download-button">Download Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Master Typing Speed in English, French, and Arabic</h1>
+                <p>Learning to touch type has never been easier! Typing Professional offers intuitive lessons and exercises, guiding you step-by-step to unlock the power of all ten fingers for faster, more accurate, and more efficient typing.</p>
+                <div class="language-support">
+                    <i class="fa-solid fa-language"></i>
+                    <i class="fa-solid fa-keyboard"></i>
+                    <i class="fa-solid fa-earth-africa"></i>
+                </div>
+                <a href="ms-windows-store://pdp/?productid=9PJ3WLW98BFS" class="download-button large">Get it on Microsoft Store</a>
+            </div>
+            <div class="hero-image">
+                <img src="Images/tpImage.png" alt="Typing Professional App Screenshot">
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    
+                    <i class="fa-solid fa-book-open"></i>
+                    <h3>Personalized Lessons</h3>
+                    <p>Adaptive learning system tailored to your individual skill level.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fa-solid fa-comment-dots"></i>
+                    <h3>Real-time Feedback</h3>
+                    <p>Instant feedback on accuracy and speed to improve quickly.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fa-solid fa-chart-line"></i>
+                    <h3>Progress Tracking</h3>
+                    <p>Monitor your progress with detailed statistics and charts.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fa-solid fa-globe"></i>
+                    <h3>Multiple Languages</h3>
+                    <p>Support for English, French, and Arabic keyboard layouts.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fa-solid fa-gamepad"></i>
+                    <h3>Engaging Exercises</h3>
+                    <p>Fun and interactive exercises to make learning enjoyable.</p>
+                </div>
+                <div class="feature-item">
+                    <i class="fa-solid fa-cloud-arrow-down"></i>
+                    <h3>Offline Access</h3>
+                    <p>Practice your typing skills anytime, anywhere.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="screenshots" class="screenshots">
+        <div class="container">
+            <h2>App Screenshots</h2>
+            <div class="screenshots-grid">
+                <img src="Images/tpEnglish.png" alt="Screenshot 1">
+                <img src="Images/tpArabic.png" alt="Screenshot 2">
+                <img src="Images/tpTResult.png" alt="Screenshot 3">
+                <img src="Images/tpResult.png" alt="Screenshot 4">
+                <img src="Images/tpTheme.png" alt="Screenshot 5">
+                <img src="Images/tpLesson.png" alt="Screenshot 6">
+                <img src="Images/tpSetings.png" alt="Screenshot 7">
+                </div>
+        </div>
+    </section>
+
+    <section id="support" class="support">
+        <div class="container">
+            <h2>Support & FAQ</h2>
+            <div class="support-content">
+                <div class="faq">
+                    <h3>Frequently Asked Questions</h3>
+                    <div class="faq-item">
+                        <h4>What platforms does Typing Professional support?</h4>
+                        <p>Typing Professional is currently available on the Microsoft Store for Windows.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h4>Is there a free trial?</h4>
+                        <p>Not for the moment.</p>
+                    </div>
+                    </div>
+                <div class="contact-info">
+                    <h3>Need Help?</h3>
+                    <p>Contact us at <a href="mailto:khaloukyoussef11@gmail.com">khaloukyoussef11@gmail.com</a></p>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Have questions or feedback? Reach out to us!</p>
+            <form id="contact-form" method="POST" onsubmit="sendEmail(event)">
+                <div class="form-group">
+            
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 YOUSSEF KHALOUK. All rights reserved. | <a href="https://www.termsfeed.com/live/e64a5b4e-540b-4c8e-8680-0807b35b3302">Privacy Policy</a></p>
+        </div>
+    </footer>
+</body>
+</html>
