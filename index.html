@@ -3,54 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Typing Professional is the ultimate typing tutor to improve your typing speed and accuracy. Available in English, French, and Arabic. Download now!">
+    
+    <meta name="keywords" content="Typing Professional, typing software, learn typing, typing tutor, touch typing, typing accuracy, speed typing lessons, English typing, French typing, Arabic typing, keyboard training">
+
+    <meta property="og:title" content="Typing Professional - Learn to Type Faster">
+    <meta property="og:description" content="Boost your typing speed and accuracy with Typing Professional. Available in English, French, and Arabic.">
+    <meta property="og:image" content="https://typingprofessionalapp.com/Images/TypingPro-150.png">
+    <meta property="og:url" content="https://typingprofessionalapp.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Typing Professional - Learn to Type Faster">
+    <meta name="twitter:description" content="Improve your typing speed and accuracy with Typing Professional. Available in English, French, and Arabic.">
+    <meta name="twitter:image" content="https://typingprofessionalapp.com/Images/TypingPro-150.png">
+
     <title>Typing Professional - Learn to Type Faster</title>
-    <link rel="icon" href="Images/TypingPro-150.png" type="image/png">
+    <link rel="icon" href="https://typingprofessionalapp.com/Images/TypingPro-150.png" type="image/png">
+    
+    <link rel="canonical" href="https://typingprofessionalapp.com">
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
      <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-05HQWEKPEK"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-    
-      gtag('config', 'G-05HQWEKPEK');
-    </script>
-    
+
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
-    <script type="text/javascript">
-        // Initialize EmailJS
-        (function() {
-            emailjs.init("MDau2j_FXMQtfgVgD");  // Replace with your user ID from EmailJS
-        })();
-
-        function sendEmail(event) {
-            event.preventDefault();  // Prevent default form submission
-            
-            // Get form data
-            const name = document.getElementById("name").value;
-            const email = document.getElementById("email").value;
-            const message = document.getElementById("message").value;
-
-            // Send email using EmailJS
-            const params = {
-                name: name,
-                email: email,
-                message: message
-            };
-
-            emailjs.send("service_376x694", "template_s5ifpvn", params)
-                .then((response) => {
-                    alert("Your message has been sent!");
-                    document.getElementById("contact-form").reset();  // Reset the form
-                })
-                .catch((error) => {
-                    alert("Error: " + JSON.stringify(error));
-                });
-        }
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "name": "Typing Professional",
+            "operatingSystem": "Windows",
+            "applicationCategory": "EducationalApplication",
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.5",
+                "reviewCount": "120"
+            },
+            "offers": {
+                "@type": "Offer",
+                "price": "3.99",
+                "priceCurrency": "USD"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "YOUSSEF KHALOUK"
+            },
+            "publisher": {
+                "@type": "Organization",
+                "name": "Typing Professional",
+                "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://typingprofessionalapp.com/Images/TypingPro-150.png"
+                }
+            }
+        }   
     </script>
 </head>
 <body>
@@ -133,13 +141,13 @@
         <div class="container">
             <h2>App Screenshots</h2>
             <div class="screenshots-grid">
-                <img src="Images/tpEnglish.png" alt="Screenshot 1">
-                <img src="Images/tpArabic.png" alt="Screenshot 2">
-                <img src="Images/tpTResult.png" alt="Screenshot 3">
-                <img src="Images/tpResult.png" alt="Screenshot 4">
-                <img src="Images/tpTheme.png" alt="Screenshot 5">
-                <img src="Images/tpLesson.png" alt="Screenshot 6">
-                <img src="Images/tpSetings.png" alt="Screenshot 7">
+                <img src="Images/tpEnglish.png" alt="Typing Professional English typing lesson screenshot">
+                <img src="Images/tpArabic.png" alt="Typing Professional Arabic typing lesson screenshot">
+                <img src="Images/tpTResult.png" alt="Typing Professional typing result page screenshot">
+                <img src="Images/tpResult.png" alt="Typing Professional typing result page screenshot">
+                <img src="Images/tpTheme.png" alt="Typing Professional theme screenshot">
+                <img src="Images/tpLesson.png" alt="Typing Professional typing lesson screenshot">
+                <img src="Images/tpSetings.png" alt="Typing Professional settings page screenshot">
                 </div>
         </div>
     </section>
@@ -195,5 +203,8 @@
             <p>&copy; 2025 YOUSSEF KHALOUK. All rights reserved. | <a href="https://www.termsfeed.com/live/e64a5b4e-540b-4c8e-8680-0807b35b3302">Privacy Policy</a></p>
         </div>
     </footer>
+
+    <script src="script.js"></script>
+    
 </body>
 </html>
