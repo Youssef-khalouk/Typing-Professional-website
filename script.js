@@ -35,3 +35,39 @@ function sendEmail(event) {
             alert("Error: " + JSON.stringify(error));
         });
 }
+
+function switchLanguage(lang) {
+    if (lang === 'en') {
+        window.location.href = '../en/index.html';
+    } else if (lang === 'fr') {
+        window.location.href = '../fr/index.html';
+    } else if (lang === 'ar') {
+        window.location.href = '../ar/index.html';
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    const navItems = document.querySelectorAll('.nav-links ul li a'); // Select all menu links
+
+    // Toggle the menu when the hamburger button is clicked
+    menuToggle.addEventListener('click', function (event) {
+        navLinks.classList.toggle('active');
+        event.stopPropagation(); // Prevent the click from propagating to the document
+    });
+
+    // Close the menu when clicking outside of it
+    document.addEventListener('click', function (event) {
+        if (!navLinks.contains(event.target) && !menuToggle.contains(event.target)) {
+            navLinks.classList.remove('active'); // Remove the "active" class to hide the menu
+        }
+    });
+
+    // Close the menu when clicking on any menu item
+    navItems.forEach(function (item) {
+        item.addEventListener('click', function () {
+            navLinks.classList.remove('active'); // Remove the "active" class to hide the menu
+        });
+    });
+});

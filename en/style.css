@@ -1,0 +1,564 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+header {
+    background-color: #fff;
+    padding: 5px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    margin-right: 10px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #007bff;
+}
+
+.download-button {
+    background-color: #007bff;
+    color: #fff !important;
+    padding: 10px 20px;
+    border-radius: 5px;
+    white-space: nowrap; /* Prevent the button text from breaking into multiple lines */
+    font-size: 1rem; /* Adjust font size */
+    padding: 10px 20px; /* Adjust padding */
+}
+
+.download-button.large {
+    font-size: 1.2em;
+    padding: 15px 30px;
+}
+
+.hero {
+    background-color: #e9ecef;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hero-content {
+    flex: 1;
+    padding-right: 20px;
+    text-align: left;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 1px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.language-support {
+    margin-top: 20px;
+}
+
+.language-support img {
+    margin-right: 10px;
+}
+
+.features {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.features h2, .screenshots h2, .support h2, .contact h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.feature-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.feature-item img {
+    margin-bottom: 15px;
+}
+
+.feature-item i {
+    font-size: 2.5rem;
+    color: #3498db;
+    margin-bottom: 1rem;
+}
+
+.language-support i {
+    font-size: 2rem;
+    color: #3498db;
+    margin-bottom: 2rem;
+}
+
+.screenshots {
+    padding: 60px 0;
+    background-color: #f4f4f4;
+}
+
+.screenshots-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+.screenshots-grid img {
+    width: 100%;
+    border-radius: 2px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.support {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.support-content {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-item h4 {
+    margin-top: 0;
+    color: #007bff;
+}
+
+.contact {
+    padding: 60px 0;
+    background-color: #e9ecef;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.submit-button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #218838;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Language Switcher Container */
+.language-switcher {
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+}
+
+/* Main Button */
+.language-button {
+    background-color: transparent; /* Transparent background */
+    color: #007BFF; /* Primary color for text */
+    border: 1px solid #007BFF; /* Smaller border (1px) */
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between text and arrow */
+    gap: 5px;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    width: 150px; /* Set a fixed width for the button */
+}
+
+.language-button:hover {
+    background-color: #007BFF; /* Blue background on hover */
+    color: white; /* White text on hover */
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Glow effect */
+}
+
+/* Dropdown Menu */
+.language-dropdown {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1000;
+    min-width: 150px;
+    margin-top: 0px;
+    animation: flash 0.5s ease-in-out; /* Flash effect when dropdown opens */
+}
+
+/* Dropdown Buttons */
+.language-dropdown button {
+    background-color: transparent; /* Transparent background */
+    color: #333;
+    border: none;
+    padding: 10px 15px;
+    text-align: left;
+    width: 100%;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.language-dropdown button:hover {
+    background-color: #f4f4f4; /* Light gray background on hover */
+}
+
+/* Show Dropdown on Hover */
+.language-switcher:hover .language-dropdown {
+    display: block;
+}
+
+/* Flash Animation */
+@keyframes flash {
+    0% {
+        box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(0, 123, 255, 0.7);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+    }
+}
+
+/* Flash Animation for Button */
+@keyframes button-flash {
+    0% {
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 15px rgba(0, 123, 255, 0.7);
+    }
+    100% {
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    }
+}
+
+/* Apply Flash Effect When Dropdown is Open */
+.language-switcher:hover .language-button {
+    animation: button-flash 0.5s ease-in-out;
+}
+
+/* Arrow Icon Animation */
+.arrow-icon {
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 18px; /* Make the arrow bigger */
+    color: #007BFF; /* Same as the button border color */
+    animation: arrow-flash 1s infinite; /* Infinite flashing animation */
+}
+
+
+.arrow-icon {
+    font-size: 18px; /* Make the arrow bigger */
+    color: inherit; /* Inherit color from the button */
+    transition: transform 0.3s ease; /* Smooth rotation */
+}
+
+/* Rotate Arrow When Dropdown is Open */
+.language-switcher:hover .arrow-icon {
+    transform: rotate(180deg); /* Rotate arrow upside down */
+}
+
+/* Hide the menu toggle button by default */
+.menu-toggle {
+    display: none;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    color: #007BFF;
+    cursor: pointer;
+}
+
+/* Style the navigation links */
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* Hide the navigation links on smaller screens */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Show the hamburger menu button */
+    }
+
+    .nav-links {
+        display: none; /* Hide the navigation links by default */
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Adjust based on header height */
+        right: 0;
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 200px;
+        border-radius: 5px;
+        z-index: 1000;
+    }
+
+    .nav-links ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-links ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .nav-links ul li a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        padding: 10px;
+        display: block;
+        transition: background-color 0.3s ease;
+    }
+
+    .nav-links ul li a:hover {
+        background-color: #f4f4f4;
+    }
+
+    /* Show the navigation links when active */
+    .nav-links.active {
+        display: flex;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    header .logo {
+        margin-bottom: 15px;
+    }
+
+    header nav ul {
+        flex-direction: column;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    .hero .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content {
+        padding-right: 0;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .support-content {
+        flex-direction: column;
+    }
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    /* Adjust the logo and title */
+    .logo h1 {
+        font-size: 1.2rem;
+    }
+
+    .logo img {
+        width: 40px; /* Make the logo smaller */
+        height: 40px;
+    }
+
+    /* Adjust the Download Now button */
+    .download-button {
+        font-size: 0.9em; /* Make the button text smaller */
+        padding: 8px 15px; /* Reduce padding */
+        white-space: nowrap; /* Prevent the button text from breaking into multiple lines */
+    }
+
+    /* Adjust the language button */
+    .language-button {
+        font-size: 12px; /* Make the language button text smaller */
+        padding: 8px 10px; /* Reduce padding */
+        width: auto; /* Allow the button to shrink */
+    }
+
+    /* Adjust the header container */
+    header .container {
+        flex-wrap: wrap; /* Allow wrapping of elements if needed */
+    }
+}
+
+/* Ensure the title stays on one line */
+.logo h1 {
+    font-size: 1.5rem; /* Adjust font size for better responsiveness */
+    white-space: nowrap; /* Prevent the title from breaking into multiple lines */
+    overflow: hidden; /* Prevent overflow */
+    text-overflow: ellipsis; /* Add ellipsis if the title is too long */
+    margin: 0; /* Remove extra margin */
+}
+
+/* Adjust the Download Now button */
+.download-button {
+    white-space: nowrap; /* Prevent the button text from breaking into multiple lines */
+    font-size: 1rem; /* Adjust font size */
+    padding: 10px 20px; /* Adjust padding */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    /* Make the title smaller on smaller screens */
+    .logo h1 {
+        font-size: 1.2rem; /* Reduce font size for smaller screens */
+    }
+
+    /* Adjust the Download Now button for smaller screens */
+    .download-button {
+        font-size: 0.9rem; /* Make the button text smaller */
+        padding: 8px 15px; /* Reduce padding */
+    }
+}
+
+@media (max-width: 768px) {
+    /* Adjust the header container for small screens */
+    header .container {
+        display: flex;
+        justify-content: space-between; /* Space between logo and buttons */
+        align-items: center; /* Align items vertically */
+    }
+
+    /* Position the language button next to the hamburger menu */
+    .language-switcher {
+        order: 2; /* Ensure it appears after the logo */
+        margin-left: auto; /* Push it to the right */
+        margin-right: 10px; /* Add spacing between the language button and the hamburger menu */
+    }
+
+    /* Adjust the hamburger menu button */
+    .menu-toggle {
+        order: 3; /* Ensure it appears after the language button */
+    }
+
+    /* Adjust the logo */
+    .logo {
+        order: 1; /* Ensure the logo appears first */
+        flex-grow: 1; /* Allow the logo to take up available space */
+    }
+
+    /* Center the logo text */
+    .logo h1 {
+        text-align: left;
+        font-size: 1.2rem; /* Adjust font size for smaller screens */
+    }
+}

@@ -1,0 +1,438 @@
+body {
+    font-family: 'Arial', sans-serif; /* Ensure Arabic-friendly font, use 'Arial' or another Arabic-friendly font like 'Roboto' */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    direction: rtl; /* Set right-to-left text direction */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+header {
+    background-color: #fff;
+    padding: 5px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo img {
+    margin-left: 10px; /* Reverse the margin for RTL */
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 20px; /* Reverse the margin for RTL */
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #007bff;
+}
+
+.download-button {
+    background-color: #007bff;
+    color: #fff !important;
+    padding: 10px 20px;
+    border-radius: 5px;
+    white-space: nowrap; /* Prevent the button text from breaking into multiple lines */
+    font-size: 1rem; /* Adjust font size */
+    padding: 10px 20px; /* Adjust padding */
+}
+
+.download-button.large {
+    font-size: 1.2em;
+    padding: 15px 30px;
+}
+
+.hero {
+    background-color: #e9ecef;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.hero .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hero-content {
+    flex: 1;
+    padding-left: 20px; /* Reverse padding for RTL */
+    text-align: right; /* Change text alignment for RTL */
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 1px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.language-support {
+    margin-top: 20px;
+}
+
+.language-support img {
+    margin-left: 10px; /* Reverse the margin for RTL */
+}
+
+.features {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.features h2, .screenshots h2, .support h2, .contact h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.feature-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.feature-item img {
+    margin-bottom: 15px;
+}
+
+.feature-item i {
+    font-size: 2.5rem;
+    color: #3498db;
+    margin-bottom: 1rem;
+}
+
+.language-support i {
+    font-size: 2rem;
+    color: #3498db;
+    margin-bottom: 2rem;
+}
+
+.screenshots {
+    padding: 60px 0;
+    background-color: #f4f4f4;
+}
+
+.screenshots-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+.screenshots-grid img {
+    width: 100%;
+    border-radius: 2px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.support {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.support-content {
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-item h4 {
+    margin-top: 0;
+    color: #007bff;
+}
+
+.contact {
+    padding: 60px 0;
+    background-color: #e9ecef;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: right; /* Right-align form fields for RTL */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.submit-button {
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #218838;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Language Switcher Container */
+.language-switcher {
+    position: relative;
+    display: inline-block;
+    margin: 20px;
+}
+
+/* Main Button */
+.language-button {
+    background-color: transparent; /* Transparent background */
+    color: #007BFF; /* Primary color for text */
+    border: 1px solid #007BFF; /* Smaller border (1px) */
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space between text and arrow */
+    gap: 5px;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    width: 150px; /* Set a fixed width for the button */
+}
+
+.language-button:hover {
+    background-color: #007BFF; /* Blue background on hover */
+    color: white; /* White text on hover */
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5); /* Glow effect */
+}
+
+/* Dropdown Menu */
+.language-dropdown {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 1000;
+    min-width: 150px;
+    margin-top: 0px;
+    animation: flash 0.5s ease-in-out; /* Flash effect when dropdown opens */
+}
+
+/* Dropdown Buttons */
+.language-dropdown button {
+    background-color: transparent; /* Transparent background */
+    color: #333;
+    border: none;
+    padding: 10px 15px;
+    text-align: left;
+    width: 100%;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.language-dropdown button:hover {
+    background-color: #f4f4f4; /* Light gray background on hover */
+}
+
+/* Show Dropdown on Hover */
+.language-switcher:hover .language-dropdown {
+    display: block;
+}
+
+/* Flash Animation */
+@keyframes flash {
+    0% {
+        box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(0, 123, 255, 0.7);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+    }
+}
+
+/* Flash Animation for Button */
+@keyframes button-flash {
+    0% {
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 15px rgba(0, 123, 255, 0.7);
+    }
+    100% {
+        box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    }
+}
+
+/* Apply Flash Effect When Dropdown is Open */
+.language-switcher:hover .language-button {
+    animation: button-flash 0.5s ease-in-out;
+}
+
+/* Arrow Icon Animation */
+.arrow-icon {
+    display: inline-block;
+    margin-right: 5px; /* Reverse the margin for RTL */
+    font-size: 18px; /* Make the arrow bigger */
+    color: #007BFF; /* Same as the button border color */
+    animation: arrow-flash 1s infinite; /* Infinite flashing animation */
+}
+
+.arrow-icon {
+    font-size: 18px; /* Make the arrow bigger */
+    color: inherit; /* Inherit color from the button */
+    transition: transform 0.3s ease; /* Smooth rotation */
+}
+
+/* Rotate Arrow When Dropdown is Open */
+.language-switcher:hover .arrow-icon {
+    transform: rotate(180deg); /* Rotate arrow upside down */
+}
+
+/* Hide the menu toggle button by default */
+.menu-toggle {
+    display: none;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    color: #007BFF;
+    cursor: pointer;
+}
+
+/* Style the navigation links */
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align to the right for RTL */
+}
+
+/* Hide the navigation links on smaller screens */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block; /* Show the hamburger menu button */
+    }
+
+    .nav-links {
+        display: none; /* Hide the navigation links by default */
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Adjust based on header height */
+        left: 0; /* Align to the left for RTL */
+        background-color: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 200px;
+        border-radius: 5px;
+        z-index: 1000;
+    }
+
+    .nav-links ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-links ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .nav-links ul li a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        padding: 10px;
+        display: block;
+        transition: background-color 0.3s ease;
+    }
+
+    .nav-links ul li a:hover {
+        background-color: #f4f4f4;
+    }
+
+    /* Show the navigation links when active */
+    .nav-links.active {
+        display: flex;
+    }
+}
