@@ -8,7 +8,7 @@ gtag('config', 'G-05HQWEKPEK');
 
 // Initialize EmailJS
 (function () {
-    emailjs.init("MDau2j_FXMQtfgVgD"); // Replace with your user ID from EmailJS
+    emailjs.init("BdAC2IK5B4xF3Ewbe"); // Replace with your user ID from EmailJS
 })();
 
 function sendEmail(event) {
@@ -26,7 +26,7 @@ function sendEmail(event) {
         message: message
     };
 
-    emailjs.send("service_376x694", "template_s5ifpvn", params)
+    emailjs.send("service_xjl8phq", "template_2fltjmb", params)
         .then((response) => {
             alert("Your message has been sent!");
             document.getElementById("contact-form").reset(); // Reset the form
