@@ -1,0 +1,5 @@
+Contact: mailto:security@typingprofessionalapp.com
+Encryption: https://typingprofessionalapp.com/pgp-key.txt
+Acknowledgements: https://typingprofessionalapp.com/security/acknowledgements.html
+Policy: https://typingprofessionalapp.com/security/policy.html
+Hiring: https://typingprofessionalapp.com/careers

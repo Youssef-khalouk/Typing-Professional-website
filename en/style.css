@@ -1,10 +1,20 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    font-family: sans-serif;
-    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;pngpng
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .container {
@@ -79,10 +89,14 @@ header nav ul li a:hover {
 }
 
 .hero {
-    background-color: #e9ecef;
+    background: linear-gradient(135deg, #e9ecef 0%, #fff 100%);
     padding: 80px 0;
     text-align: center;
 }
+
+.download-button:hover {
+    background-color: #0056b3;
+} 
 
 .hero .container {
     display: flex;
@@ -172,6 +186,55 @@ header nav ul li a:hover {
     width: 100%;
     border-radius: 2px;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Carousel styling */
+.carousel {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel-images img {
+    width: 100%;
+    display: none;
+}
+
+.carousel .prev,
+.carousel .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 1.2rem;
+}
+
+.carousel .prev { left: 10px; }
+.carousel .next { right: 10px; }
+
+.dots {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    display: inline-block;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #717171;
 }
 
 .support {

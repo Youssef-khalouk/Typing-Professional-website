@@ -70,4 +70,45 @@ document.addEventListener('DOMContentLoaded', function () {
             navLinks.classList.remove('active'); // Remove the "active" class to hide the menu
         });
     });
+
+    /* carousel code */
+    function initCarousel() {
+        const carousel = document.querySelector('.carousel');
+        if (!carousel) return;
+        const slides = carousel.querySelectorAll('.carousel-images img');
+        let current = 0;
+        const prevBtn = carousel.querySelector('.prev');
+        const nextBtn = carousel.querySelector('.next');
+        const dotsContainer = carousel.querySelector('.dots');
+
+        slides.forEach((slide, index) => {
+            slide.style.display = index === 0 ? 'block' : 'none';
+            const dot = document.createElement('span');
+            dot.className = 'dot' + (index === 0 ? ' active' : '');
+            dot.addEventListener('click', () => showSlide(index));
+            dotsContainer.appendChild(dot);
+        });
+
+        function showSlide(index) {
+            slides[current].style.display = 'none';
+            dotsContainer.children[current].classList.remove('active');
+            current = (index + slides.length) % slides.length;
+            slides[current].style.display = 'block';
+            dotsContainer.children[current].classList.add('active');
+        }
+
+        prevBtn.addEventListener('click', () => showSlide(current - 1));
+        nextBtn.addEventListener('click', () => showSlide(current + 1));
+
+        // keyboard support
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') showSlide(current - 1);
+            if (e.key === 'ArrowRight') showSlide(current + 1);
+        });
+
+        // auto rotate every 5 seconds
+        setInterval(() => showSlide(current + 1), 5000);
+    }
+
+    initCarousel();
 });
